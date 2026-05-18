@@ -21,6 +21,7 @@ public class selectionSort {
                     min = j;
                 }
             }
+            
             int temp = arr[min];
             arr[min] = arr[i];
             arr[i] = temp;
@@ -31,6 +32,6 @@ public class selectionSort {
         for (int num : arr) {
             System.out.print(num + " ");
         }
-        
+
     }
 }
