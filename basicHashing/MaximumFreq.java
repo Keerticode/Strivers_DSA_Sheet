@@ -4,7 +4,7 @@ You are given an integer array nums and an integer k. In one operation, you can 
 
 Return the maximum possible frequency of an element after performing at most k operations.
 
-Solved this using brute force method
+I Solved this using brute force method
 
 */
 
