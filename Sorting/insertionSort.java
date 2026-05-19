@@ -22,7 +22,6 @@ public class insertionSort {
             }
         }
 
-        
         System.out.println("Sorted array of given array using insertion sort is : ");
 
         for (int num : nums) {
