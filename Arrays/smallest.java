@@ -10,7 +10,6 @@ public class smallest {
                 ssmallest = smallest;
                 smallest = nums[i];
             }
-
             else if (smallest < nums[i] && ssmallest > nums[i]) {
                 ssmallest = nums[i];
             }
