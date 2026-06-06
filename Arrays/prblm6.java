@@ -21,11 +21,12 @@ public class prblm6 {
             nums[i] = temp[i - (n - k)];
         }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter length of array : ");
         int n = sc.nextInt();
-       
+        
         int[] nums = new int[n];
         System.out.println("Enter array : ");
         for (int i = 0; i < n; i++) {
