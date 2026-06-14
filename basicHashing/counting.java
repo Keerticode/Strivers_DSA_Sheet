@@ -7,7 +7,7 @@ public class counting {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
+    
         System.out.println("Enter n :");
         int n = sc.nextInt();
 
@@ -22,7 +22,7 @@ public class counting {
         for (int i = 0; i < n; i++) {
             hash[arr[i]] += 1;
         }
-
+    
         System.out.println("Enter q :");
         int q = sc.nextInt();
 
