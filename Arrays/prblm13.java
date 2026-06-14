@@ -1,4 +1,5 @@
-import java.util.HashMap;
+
+
 /*
 
 ------> Brute Force approach
@@ -62,5 +63,37 @@ public class prblm13 {
 }
 */
 
-//  ----->Optimized approach
+// -----> Optimized approach
 
+public class prblm13 {
+    public static void main(String[] args) {
+
+        int[] nums = {2, 1, 1, 1, 4, 5};
+        int k = 5;
+
+        int n = nums.length;
+
+        int i = 0;
+        int j = 0;
+        int sum = 0;
+        int maxLen = 0;
+
+        while(i < n) {
+            
+            sum += nums[i];
+
+            while(i >= j &&  sum > k) {
+                sum -= nums[j];
+                j++;
+            }
+            
+            if(sum == k) {
+                int len = i - j + 1;
+                maxLen = Math.max(maxLen, len);
+            }
+            i++;
+        }
+
+        System.out.println(maxLen); 
+    }
+}
