@@ -1,4 +1,27 @@
 import java.util.HashMap;
+/*
+
+------> Brute Force approach
+    
+        int maxLen = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            int sum = 0;
+            
+            for (int j = i; j < nums.length; j++) {
+                sum += nums[j];
+
+                if (sum == k) {
+                    int len = j - i + 1;
+                    maxLen = Math.max(maxLen, len);
+                }
+            }
+        }
+
+        return maxLen;
+
+        
+------>  Better approach
 
 public class prblm13 {
     public static void main(String[] args) {
@@ -34,3 +57,4 @@ public class prblm13 {
         System.out.println("Maximum Length = " + maxLen);
     }
 }
+*/
