@@ -20,8 +20,11 @@ import java.util.HashMap;
 
         return maxLen;
 
-        
+
 ------>  Better approach
+
+===> This approach is valid even when array contains zero or negatives and this cannot be optimized more if array has zero and -ve's nut we optimize for array containg only +ve integers
+
 
 public class prblm13 {
     public static void main(String[] args) {
@@ -58,3 +61,6 @@ public class prblm13 {
     }
 }
 */
+
+//  ----->Optimized approach
+
