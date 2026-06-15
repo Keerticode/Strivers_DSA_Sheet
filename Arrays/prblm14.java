@@ -1,3 +1,7 @@
+/* 
+
+----> Brute Force approach
+
 public class prblm14 {
     public static void main(String[] args) {
         int[] nums = {1, 6, 2, 10, 3};
@@ -19,5 +23,35 @@ public class prblm14 {
         }
         System.out.println("first Index : "+ firstindx);
         System.out.println("Second Index : "+ secindx);
+    }
+}
+
+*/
+// Optimal using HashMap
+
+import java.util.HashMap;
+
+public class prblm14 {
+    public static void main(String[] args) {
+
+        int[] nums = {1, 6, 2, 10, 3};
+        int target = 13;
+
+        HashMap<Integer, Integer> twoSum = new HashMap<>();
+       
+        for (int i = 0; i < nums.length; i++) {
+            int remaining = target - nums[i];
+
+            if(twoSum.containsKey(remaining)) {
+                int idx = twoSum.get(remaining);
+
+                System.out.println(idx);
+                System.out.println(i);
+            }
+
+            if(!twoSum.containsKey(remaining)) {
+                twoSum.put(nums[i],i);
+            }
+        }
     }
 }
