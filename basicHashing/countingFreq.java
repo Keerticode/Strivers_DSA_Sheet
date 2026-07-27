@@ -21,7 +21,6 @@ public class countingFreq {
         }
 
         List<List<Integer>> newhash = new ArrayList<>();
-
         for (Map.Entry<Integer, Integer> entry : hMap.entrySet()) {
             List<Integer> hash = new ArrayList<>();
             hash.add(entry.getKey());

@@ -10,7 +10,7 @@ public class counting {
     
         System.out.println("Enter n :");
         int n = sc.nextInt();
-
+        
         int[] arr = new int[n];
 
         System.out.println("Enter array :");

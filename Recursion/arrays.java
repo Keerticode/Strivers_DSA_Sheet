@@ -1,6 +1,7 @@
 //Reverse a given Array
 
 //solved using single pointer
+
 import java.util.*;
 
 public class arrays {
@@ -13,7 +14,7 @@ public class arrays {
         arr[n - i - 1] = temp;
         reverseArray(i + 1, n, arr);
     }
-
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n : ");
