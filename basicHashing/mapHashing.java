@@ -22,7 +22,7 @@ public class mapHashing {
 
             if (hMap.containsKey(arr[i])) {
 
-                int oldFreq = hMap.get(arr[i]); //1. Take current array element 2. Use it as key in HashMap 3. Return its frequency
+                int oldFreq = hMap.get(arr[i]);     //1. Take current array element 2. Use it as key in HashMap 3. Return its frequency
 
                 hMap.put(arr[i], oldFreq + 1);
 
@@ -58,5 +58,5 @@ public class mapHashing {
 // take a input of number of queries you want to run
 // run a while loop
 // decrement the query
-// fect the hash map created above
+// fetch the hash map created above
 // print the frequencies
